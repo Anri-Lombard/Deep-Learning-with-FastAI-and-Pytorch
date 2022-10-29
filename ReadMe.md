@@ -1,4 +1,4 @@
-# FastAI course V5 by Jeremy Howard V.5
+# FastAI course by Jeremy Howard V.5
 
 ## Lesson 1 (Getting Started)
 * Built an Image Classifier
