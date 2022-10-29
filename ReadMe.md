@@ -18,3 +18,6 @@
 * Learned importance of hyper parameters in choosing parameters for model
 * Used paperspace notebooks
   - An upgrade to Kaggle and Colab since it uses an actual (not virtual) machine.
+
+## Lesson 4 (NLP)
+* In progress...
