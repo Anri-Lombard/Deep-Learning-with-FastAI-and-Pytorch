@@ -54,6 +54,9 @@
 	- We find the best binary split
 	- Next lesson we'll do this recursively
 
+## Lesson 6 (Random forests)
+* In progress...
+
 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
