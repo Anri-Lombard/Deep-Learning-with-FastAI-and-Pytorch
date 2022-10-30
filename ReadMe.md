@@ -38,6 +38,8 @@
 * Used Paperspace to run notebooks
 	- Again, much faster than Kaggle
 
+## Lesson 5 (From scratch model)
+* In progress...
 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
