@@ -1,7 +1,6 @@
 # FastAI course by Jeremy Howard V.5
 
-##
-Process I found useful for learning:
+## Process I found useful for learning this course
 1. Listen to lecture completely and take notes (just to help understanding - I don't go back much to them)
 2. Retry everything he did on my own, tinker with notebooks until I get stuck, then check the video for what he did
 3. Try to change his models to my own ideas (pretty hard to do sometimes)
