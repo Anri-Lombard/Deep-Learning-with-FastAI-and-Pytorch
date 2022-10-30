@@ -4,6 +4,7 @@
 1. Listen to lecture completely and take notes (just to help understanding - I don't go back much to them)
 2. Retry everything he did on my own, tinker with notebooks until I get stuck, then check the video for what he did
 3. Try to change his models to my own ideas (pretty hard to do sometimes)
+4. Experiment and play (This is important. When I move to a new lecture immediately, the content does not stick). I try to document the code as well to explain it to myself.
 
 ## Lesson 1 (Getting Started)
 * Built an Image Classifier
@@ -55,7 +56,7 @@
 	- Next lesson we'll do this recursively
 
 ## Lesson 6 (Random forests)
-* In progress...
+* Random Forests make almost no assumptions about the data and require almost no preprocessing
 
 
 
