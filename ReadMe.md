@@ -7,22 +7,22 @@
 
 ## Lesson 1 (Getting Started)
 * Built an Image Classifier
-  - Initially was a bird classifier
-  - Altered it to an apple classifier
+	- Initially was a bird classifier
+	- Altered it to an apple classifier
 
 ## Lesson 2 (Deployment)
 * Got acquainted with Huggingface spaces
-  - Used it to deploy minimal model with user interface
-  - Used it to run cat/dog classifier by uploading images of either
+	- Used it to deploy minimal model with user interface
+	- Used it to run cat/dog classifier by uploading images of either
  
 ## Lesson 3 (Neural Net Foundation)
 * Learned how gradient descent works practically
-  - Built an excel-based regression model using tedious methods, then matrix multiplication
+	- Built an excel-based regression model using tedious methods, then matrix multiplication
 * Learned about the various (500+) neural net architectures
 * Learned to prioritise quick iteration over data accumulation
 * Learned importance of hyper parameters in choosing parameters for model
 * Used Paperspace notebooks
-  - An upgrade to Kaggle and Google Colab since it uses an actual (not virtual) machine.
+	- An upgrade to Kaggle and Google Colab since it uses an actual (not virtual) machine.
 
 ## Lesson 4 (NLP)
 * Learned to use the state-of-the art Huggingface transformers to build a model
@@ -39,7 +39,21 @@
 	- Again, much faster than Kaggle
 
 ## Lesson 5 (From scratch model)
-* In progress...
+* Built a model to predict survival for the Kaggle Titanic challenge
+* Learned about replacing missing values, normalising skew data, broadcasting, and fitting a linear model
+* Constructed Deep Learning Neural Network from scratch
+* Used Fastai framework to skip over all manual steps that speed up model production and iteration
+	- Does preprocessing with minimal guidance from programmer
+	- Recommends good learning rates without tedious experiments
+* Learned about Ensembling
+	- Build multiple models and combine predictions
+* Got an introduction to Random Forests
+	- Jeremy describes it as "An ensemble of trees, that are in turn ensembles of binary splits."
+	- Binary split splits rows into 2 groups (hence binary)
+	- Continuous variables and categorical variables are treated slightly differently (thank goodness for Mathematical Statistics!)
+	- We find the best binary split
+	- Next lesson we'll do this recursively
+
 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
