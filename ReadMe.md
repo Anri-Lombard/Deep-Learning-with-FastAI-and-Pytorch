@@ -54,10 +54,22 @@
 	- Continuous variables and categorical variables are treated slightly differently (thank goodness for Mathematical Statistics!)
 	- We find the best binary split
 	- Next lesson we'll do this recursively
+* implemented a variant of the OneR classifier
 
 ## Lesson 6 (Random forests)
 * Random Forests make almost no assumptions about the data and require almost no preprocessing
-* implemented a variant of the OneR classifier
+* Implemented a TwoR model
+	- Basically 2 binary splits
+	- creates a decision tree
+* Jeremy advises to use decision trees on tabular data, so we could get a feel for how this data works and how to best build our model
+* Learned about bagging: create many independent decision trees and take the average of all their predictions. If the average of the errors are zero, then they are independent and unbiased (also learned this in a mathematical statistics course in university; a common way to do model validation is to check if the residuals, or errors, are normally distributed)
+* To measure the efficiency of a split we use Gini. Gini is a function that determines how well a decision tree was split, ranging from 0 to 0.5, where the lower it is the better the split
+	- To look at the Gini of all splits we could use a "feature importance plot"
+	- Helps find the best variables to look at
+	- More trees always increase accuracy
+* Learned about the out-of-bag-error. It is basically measuring the prediction error on the training set using error trees that were not included in the training. This removes the need of a validation set as it helps us to spot overfitting
+	- Basically it uses bagging on unused data.
+	- Bagging could apparently be done on models other than Random Forests as well.
 
 
 
