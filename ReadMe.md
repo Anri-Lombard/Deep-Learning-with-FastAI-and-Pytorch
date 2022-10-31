@@ -57,6 +57,7 @@
 
 ## Lesson 6 (Random forests)
 * Random Forests make almost no assumptions about the data and require almost no preprocessing
+* implemented a variant of the OneR classifier
 
 
 
