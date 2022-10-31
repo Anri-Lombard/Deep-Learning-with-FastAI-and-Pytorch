@@ -70,6 +70,13 @@
 * Learned about the out-of-bag-error. It is basically measuring the prediction error on the training set using error trees that were not included in the training. This removes the need of a validation set as it helps us to spot overfitting
 	- Basically it uses bagging on unused data.
 	- Bagging could apparently be done on models other than Random Forests as well.
+	- Could remove low-importance variables
+* It is extremely hard to mess up a Random Forest, making it very reliable
+* Learned about gradient boosting: make small trees, calculate the residual, then make another tree that predicts that residual, and so on. Then we take the sum of all the trees to get the prediction (almost like bagging, but different in obvious ways)
+	- Generally more accurate than Random Forest
+	- Easy to overfit
+
+* In progress... minute 54 of video
 
 
 
