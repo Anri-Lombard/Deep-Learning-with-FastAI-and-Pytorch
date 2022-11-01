@@ -112,6 +112,7 @@ I did not know much about this course, and could not find proper ratings for it,
 
 
 ## Lesson 7 (Collaborative Filtering)
+* Collaborative Filtering is a method of making predictions (usually in the form of a rating or preference) about one user based on the preferences or actions of other users.
 
 * In progress... 
 
