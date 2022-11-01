@@ -1,5 +1,8 @@
 # FastAI course by Jeremy Howard V.5
 
+## Rating of the course
+I did not know much about this course, and could not find proper ratings for it, which is why I had low expectations of it. By the third video I realized this is probably the best Machine Learning course I've ever taken, and made the effort to scour high-profile reviews of the course to see if I was missing something. I was not. This is a great course. I would rate it 9/10 if I was a professional with great eperience in the field, and 10/10 if I was a beginner (which I see myself as still). Jeremy is patient and clearly enjoys teaching the course, but his advice reaches far beyond just the course. He recommends strategies for learning Machine Learning by iterating models, to read papers and books in the field, and does so humbly without showing off that he is one of the world's best Machine Learning researchers.
+
 ## Process I found useful for learning this course
 1. Listen to lecture completely and take notes (just to help understanding - I don't go back much to them)
 2. Retry everything he did on my own, tinker with notebooks until I get stuck, then check the video for what he did
@@ -10,16 +13,19 @@
 * Built an Image Classifier
 	- Initially was a bird classifier
 	- Altered it to an apple classifier
+* Classifiers are neural networks that take an image and output a probability distribution over the classes, picking the class with the highest probability
 
 ## Lesson 2 (Deployment)
 * Got acquainted with Huggingface spaces
 	- Used it to deploy minimal model with user interface
 	- Used it to run cat/dog classifier by uploading images of either
+* Huggingface spaces is a great way to deploy models and share them with others
  
 ## Lesson 3 (Neural Net Foundation)
+* Gradient descent is a mathematical optimization technique, which is used to minimize the cost function of a neural network.
 * Learned how gradient descent works practically
 	- Built an excel-based regression model using tedious methods, then matrix multiplication
-* Learned about the various (500+) neural net architectures
+* Learned about the various (500+) neural net architectures in the timm library
 * Learned to prioritise quick iteration over data accumulation
 * Learned importance of hyper parameters in choosing parameters for model
 * Used Paperspace notebooks
@@ -27,6 +33,7 @@
 
 ## Lesson 4 (NLP)
 * Learned to use the state-of-the art Huggingface transformers to build a model
+* NLP is an acronym for Natural Language Processing
 * Learned about NLP classification
 	- Built a model for the Kaggle competition: U.S. Patent Phase to Phase Matching
 	- Used tokenisation and numericalization to convert data into a usable format for the model to do training
@@ -57,27 +64,44 @@
 * implemented a variant of the OneR classifier
 
 ## Lesson 6 (Random forests)
-* Random Forests make almost no assumptions about the data and require almost no preprocessing
-* Implemented a TwoR model
-	- Basically 2 binary splits
-	- creates a decision tree
-* Jeremy advises to use decision trees on tabular data, so we could get a feel for how this data works and how to best build our model
-* Learned about bagging: create many independent decision trees and take the average of all their predictions. If the average of the errors are zero, then they are independent and unbiased (also learned this in a mathematical statistics course in university; a common way to do model validation is to check if the residuals, or errors, are normally distributed)
-* To measure the efficiency of a split we use Gini. Gini is a function that determines how well a decision tree was split, ranging from 0 to 0.5, where the lower it is the better the split
-	- To look at the Gini of all splits we could use a "feature importance plot"
-	- Helps find the best variables to look at
-	- More trees always increase accuracy
-* Learned about the out-of-bag-error. It is basically measuring the prediction error on the training set using error trees that were not included in the training. This removes the need of a validation set as it helps us to spot overfitting
-	- Basically it uses bagging on unused data.
-	- Bagging could apparently be done on models other than Random Forests as well.
-	- Could remove low-importance variables
-* It is extremely hard to mess up a Random Forest, making it very reliable
-* Learned about gradient boosting: make small trees, calculate the residual, then make another tree that predicts that residual, and so on. Then we take the sum of all the trees to get the prediction (almost like bagging, but different in obvious ways)
-	- Generally more accurate than Random Forest
-	- Easy to overfit
+* Random Forests are an ensemble of decision trees that make predictions by averaging the predictions of each component tree
+* We implemented a TwoR classifier which is a Random Forest with 2 trees. It is a Random Forest because it uses a random subset of the data, and it is a TwoR because it has 2 trees.
+	- A TwoR classifier has 2 binary splits, which means 2 trees. Each tree has 2 leaves, which means 4 leaves in total.
+* Jeremy advises to use Random Forests on tabular data, so we could get a feel for how this data works and how to best build our model
+* Learned about bagging, which is a method of creating a random forest
+	- Bagging is an acronym for Bootstrap Aggregation
+	- Bootstrap is a method of sampling with replacement
+	- Aggregation is a method of combining the results of the samples
+* To measure the efficiency of a split we use Gini. Gini is a measure of the probability of a random sample being incorrectly classified if it is randomly labelled according to the distribution of labels in the subset.
+	- Higher Ginis are worse
+* Learned about the out-of-bag-error
+	- This is the error rate of the model on the data that was not used to train the model
+	- This is a good way to measure the accuracy of the model without having to create a validation set
+* Random Forests are hard to mess up, so we can use them as a baseline model
+* Gradient Boosting is a method of creating a Random Forest
+	- It is a method of creating a Random Forest by creating a single tree at a time
+	- Each tree is created to correct the errors of the previous tree
+	- This is a method of creating a Random Forest because it uses a random subset of the data
+	- This is a method of creating a Random Forest because it creates a single tree at a time
+* The Kaggle leader private leader board is a good way to measure the accuracy of your model, without bias from the programmers
+* jeremy recoomends iterating on a model rather than trying to build the best model from the start and realize it is not good enough too late
+* Did a Kaggle top submission walktrough
+	- fastcore.parallel is a library that allows you to run code in parallel which speeds up any process that would have been done serially
+	- ImageDataLoaders is a class that allows you to load images into a model
+	- vision_learner is a function that creates a specific type of model
+	- lr_find is a function that finds the best learning rate for your model
+	- submit as soon as we can
+	- For quick iteration everything needs to be fast and easy, even submitting to Kaggle
+	- use fastkaggle to share notebooks as well
+	- could make different notebooks for each model
+	- data augmentation is a method of creating more data by altering the existing data
+	- test time augmentation is a method of creating more data by altering the existing data at test time
+* Jeremy never uses AutoML or hyper-parameter optimization, he prefers thinking like a scientist and having hypothesis he could test with his models.
+* Don't just use a model because it is used by the majority. In this case it is the resnet, Jeremy preferst to use others such as convnext
 
-* In progress... minute 54 of video
 
 
+
+* In progress... 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
