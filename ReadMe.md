@@ -9,6 +9,17 @@ I did not know much about this course, and could not find proper ratings for it,
 3. Try to change his models to my own ideas (pretty hard to do sometimes)
 4. Experiment and play (This is important. When I move to a new lecture immediately, the content does not stick). I try to document the code as well to explain it to myself.
 
+## Course Structure
+1. Getting Started
+2. Deployment
+3. Neural Net Foundation
+4. Natural Language Processing
+5. Building models from scratch
+6. Random Forests
+7. Collaborative Filtering
+8. Convulutional Neural Networks
+9. Data ethics
+
 ## Lesson 1 (Getting Started)
 * Built an Image Classifier
 	- Initially was a bird classifier
