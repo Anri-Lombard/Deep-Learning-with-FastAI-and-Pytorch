@@ -100,7 +100,7 @@ I did not know much about this course, and could not find proper ratings for it,
 * Don't just use a model because it is used by the majority. In this case it is the resnet, Jeremy preferst to use others such as convnext
 
 
-
+## Lesson 7 (Collaborative Filtering)
 
 * In progress... 
 
