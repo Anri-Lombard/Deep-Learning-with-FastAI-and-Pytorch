@@ -1,5 +1,6 @@
 # FastAI course by Jeremy Howard V.5
 
+# Overview
 ## Rating of the course
 I did not know much about this course, and could not find proper ratings for it, which is why I had low expectations of it. By the third video I realized this is probably the best Machine Learning course I've ever taken, and made the effort to scour high-profile reviews of the course to see if I was missing something. I was not. This is a great course. I would rate it 9/10 if I was a professional with great eperience in the field, and 10/10 if I was a beginner (which I see myself as still). Jeremy is patient and clearly enjoys teaching the course, but his advice reaches far beyond just the course. He recommends strategies for learning Machine Learning by iterating models, to read papers and books in the field, and does so humbly without showing off that he is one of the world's best Machine Learning researchers.
 
@@ -20,6 +21,7 @@ I did not know much about this course, and could not find proper ratings for it,
 8. Convulutional Neural Networks
 9. Data ethics
 
+# Lesson notes
 ## Lesson 1 (Getting Started)
 * Built an Image Classifier
 	- Initially was a bird classifier
@@ -117,3 +119,7 @@ I did not know much about this course, and could not find proper ratings for it,
 * In progress... 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
+
+
+# References
+* [Fastai course](https://course.fast.ai/)
