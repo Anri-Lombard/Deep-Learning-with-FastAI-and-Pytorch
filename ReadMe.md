@@ -1,4 +1,4 @@
-# FastAI course by Jeremy Howard V.5
+# FastAI course by Jeremy Howard V.5 Part 1
 
 # Overview
 ## Rating of the course
@@ -115,10 +115,16 @@ I did not know much about this course, and could not find proper ratings for it,
 
 ## Lesson 7 (Collaborative Filtering)
 * Collaborative Filtering is a method of making predictions (usually in the form of a rating or preference) about one user based on the preferences or actions of other users.
+* Gradient accumulation is a method of training a model with a large batch size by splitting the batch into smaller batches and training the model on each of the smaller batches.
+	- Instead of buying a new GPU, you can use gradient accumulation to train a model with a larger batch size. The performance won't be much different, but it will be cheaper.
 
 * In progress... 
 
 After I finish the video version of the course, my plan is to read the entire book; then I'll append the extra notes and work to the current repo.
+
+
+# Future steps
+Part 2 is available to core members of a open source project with 50+ stars, which I am eligible for, so I'll be starting it soon. Apparently it goes way deeper, even teaching how to apply what is learned in research papers to our models. I'm excited to learn more, and I'll be sure to share my notes and work here as well, or on another repository
 
 
 # References
